@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SYREX | MUGHALXCHEATS</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background-color: #0f172a;
+      color: white;
+      overflow-x: hidden;
+    }
+    #loader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #0f172a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+    }
+    #loader h1 {
+      font-size: 2.5rem;
+      color: #3b82f6;
+      animation: pulse 1s infinite;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+    #particles-js {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 100px auto;
+      padding: 40px;
+      background: rgba(30, 41, 59, 0.9);
+      border-radius: 30px;
+      text-align: center;
+      backdrop-filter: blur(10px);
+    }
+    .logo {
+      font-size: 3.5rem;
+      font-weight: bold;
+      color: #3b82f6;
+    }
+    .typed-tagline {
+      font-size: 1.4rem;
+      color: #cbd5e1;
+      margin: 20px 0;
+      min-height: 30px;
+    }
+    .profile-img {
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid #3b82f6;
+      box-shadow: 0 10px 20px rgba(59, 130, 246, 0.4);
+    }
+    .socials a {
+      color: #3b82f6;
+      margin: 0 20px;
+      font-size: 2.2rem;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+    .socials a:hover {
+      color: #60a5fa;
+      transform: scale(1.2);
+    }
+    .hire-btn {
+      margin-top: 30px;
+      padding: 15px 40px;
+      background-color: #3b82f6;
+      color: white;
+      font-size: 1.1rem;
+      font-weight: 600;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    .theme-toggle {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 1.8rem;
+      cursor: pointer;
+    }
+    .light-mode {
+      background: #f8fafc;
+      color: #0f172a;
+    }
+    .light-mode .container {
+      background: rgba(255, 255, 255, 0.9);
+    }
+    .skills {
+      margin-top: 40px;
+      text-align: left;
+    }
+    .skills h2 {
+      margin-bottom: 20px;
+    }
+    .skill {
+      margin-bottom: 15px;
+    }
+    .skill-bar {
+      width: 100%;
+      background: #334155;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .skill-bar-fill {
+      height: 20px;
+      background: #3b82f6;
+      width: 0;
+      transition: width 2s ease;
+    }
+  </style>
+</head>
+<body>
+  <div id="loader"><h1>Loading Syrex...</h1></div>
+  <div id="particles-js"></div>
+
+  <div class="theme-toggle" onclick="toggleTheme()">
+    <i class="fas fa-moon" id="themeIcon"></i>
+  </div>
+
+  <div class="container">
+    <div class="logo">SYREX</div>
+    <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExMWY4enV2aTFpZXV2Z25xM25zZG1jZzl5djd0ZTcxb203MnA3Ym1reiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/8EeMdvlHQSeZEjT7Ct/giphy.gif" alt="Profile" class="profile-img">
+    <h1>MUGHALXCHEATS</h1>
+    <p class="typed-tagline"><span id="typed"></span></p>
+    <div class="socials">
+      <a href="https://discord.gg/UxH39kjt6m" target="_blank"><i class="fab fa-discord"></i></a>
+      <a href="https://github.com/mughal8489" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://youtu.be/RBvFLNWBRfc?si=HLpaHckV9ldZBNE8" target="_blank"><i class="fab fa-youtube"></i></a>
+    </div>
+    <button class="hire-btn" onclick="location.href='https://discord.gg/UxH39kjt6m'">Hire Now</button>
+
+    <div class="skills">
+      <h2>Skills</h2>
+      <div class="skill">
+        <label>Python</label>
+        <div class="skill-bar"><div class="skill-bar-fill" style="width: 35%;"></div></div>
+      </div>
+      <div class="skill">
+        <label>Node.js</label>
+        <div class="skill-bar"><div class="skill-bar-fill" style="width: 10%;"></div></div>
+      </div>
+      <div class="skill">
+        <label>HTML/CSS</label>
+        <div class="skill-bar"><div class="skill-bar-fill" style="width: 65%;"></div></div>
+      </div>
+      <div class="skill">
+        <label>MongoDB</label>
+        <div class="skill-bar"><div class="skill-bar-fill" style="width: 10%;"></div></div>
+      </div>
+      <div class="skill">
+        <label>Discord Bots</label>
+        <div class="skill-bar"><div class="skill-bar-fill" style="width: 80%;"></div></div>
+      </div>
+      <div class="skill">
+        <label>CSharp</label>
+        <div class="skill-bar"><div class="skill-bar-fill" style="width: 90%;"></div></div>
+      </div>
+      <div class="skill">
+        <label>C++</label>
+        <div class="skill-bar"><div class="skill-bar-fill" style="width: 30%;"></div></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    window.addEventListener("load", () => {
+      document.getElementById("loader").style.display = "none";
+    });
+
+    new Typed("#typed", {
+      strings: [
+        "I am a developer",
+        "MUGHAL X CHEATS Owner",
+        "Python Wizard",
+        "Node.js Ninja",
+        "HTML/CSS Specialist",
+        "Web Creator",
+        "Discord Bot Master",
+        "CSharp Expert",
+        "C++ Enthusiast"
+      ],
+      typeSpeed: 60,
+      backSpeed: 40,
+      backDelay: 2000,
+      loop: true
+    });
+
+    function toggleTheme() {
+      document.body.classList.toggle("light-mode");
+      const icon = document.getElementById("themeIcon");
+      icon.classList.toggle("fa-moon");
+      icon.classList.toggle("fa-sun");
+    }
+
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 60 },
+        color: { value: "#3b82f6" },
+        shape: { type: "circle" },
+        opacity: { value: 0.6 },
+        size: { value: 3 },
+        line_linked: {
+          enable: true,
+          distance: 150,
+          color: "#3b82f6",
+          opacity: 0.4,
+          width: 1
+        },
+        move: { enable: true, speed: 2 }
+      },
+      interactivity: {
+        events: {
+          onhover: { enable: true, mode: "repulse" },
+          onclick: { enable: true, mode: "push" }
+        },
+        modes: {
+          repulse: { distance: 100 },
+          push: { particles_nb: 4 }
+        }
+      }
+    });
+  </script>
+</body>
+</html>
